@@ -83,6 +83,8 @@
                 <div class="title m-b-md">
                 <!-- title name is brought from the AboutController page -->
                 {{$mytitle}}    
+                <div class="Suyog"><p> This is next paragraph</p></div>    
+
 
                 </div>
 
