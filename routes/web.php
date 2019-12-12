@@ -11,7 +11,7 @@
 |
 */
 
-// ! DISPLAYING /about page VIA GET METHOD DIRECTLY FROM VIEW
+// DISPLAYING /about page VIA GET METHOD DIRECTLY FROM VIEW
 // Route::get('/about', function () {
 //     return view('about');
 // });
@@ -20,5 +20,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// ! About page using AboutController controller
+//  About page using AboutController controller
 Route::get('/about', 'AboutController@index');
+
+//Random Number generator using RandomController
+Route::get('/random', 'RandomController@randomView');
+Route::post('/random', 'RandomController@random');
