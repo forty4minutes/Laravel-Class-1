@@ -81,7 +81,8 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Tuyog Adhikari
+                    Trying to update in git
+                    Second attempt
                 </div>
 
                 <div class="links">
