@@ -95,6 +95,7 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                     <a href="/random">Random Number generator</a>
+                    <a href="/student-form">Add Student</a>
                     <a href="/about">About</a>
                 </div>
             </div>

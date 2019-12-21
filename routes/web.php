@@ -26,3 +26,8 @@ Route::get('/about', 'AboutController@index');
 //Random Number generator using RandomController
 Route::get('/random', 'RandomController@randomView');
 Route::post('/random', 'RandomController@random');
+
+Route::get('/student-form/create', 'StudentController@create');
+Route::post('/student-form/create', 'StudentController@store');
+
+Route::get('/student-list', 'StudentController@index');
