@@ -37,7 +37,7 @@
 ​
   <form method="post" action="/random">
     <div class="buttons">
-      @csrf
+      <!-- @csrf -->
       <input type="number" value="0" placeholder="From" name="from">
       <input type="number" value="500" placeholder="To" name="to">
     </div>
@@ -55,7 +55,7 @@
     </div>
   </form>
 </div>
-Collapse
+
 
 
 
