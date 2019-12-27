@@ -81,8 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Trying to update in git
-                    Second attempt
+                    Laravel
                 </div>
 
                 <div class="links">
@@ -95,7 +94,21 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                     <a href="/random">Random Number generator</a>
-                    <a href="/about">About</a>
+                    <ul>
+
+                   <li> <a href="/student-form">Student Form</a></li>
+                   <li> <a href="/student-list">Student-List</a></li>
+                   <li> <a href="/faculty-form">Faculty form</a></li>
+                   <li> <a href="/faculty-list">Faculty List</a></li>
+                   <li> <a href="/department-form">Department Form</a></li>
+                   <li> <a href="/department-list">Department-List</a></li>
+                   
+                   
+                   
+                   
+                   </ul>
+                   
+                   <a href="/about">About</a>
                 </div>
             </div>
         </div>
