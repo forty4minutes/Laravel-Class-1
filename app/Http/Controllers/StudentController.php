@@ -26,7 +26,8 @@ class StudentController extends Controller
      */
     public function index()
     {
-        $studentList=Students::get();
+        
+        $studentList=Students::where('status',1)->get();
         return view('student-list')->with('Students',$studentList);
     }
 
