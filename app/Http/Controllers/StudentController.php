@@ -87,7 +87,8 @@ class StudentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $student = Students::find($id);
+        return view('student-update')->with('student', $student);
     }
 
     
@@ -101,7 +102,15 @@ class StudentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $this->validator($request->all())->validate();
+        Students::where('id', $id)
+                 ->update([
+                            'name' => $request->name,
+                            'email' => $request->email,
+                            'phone' => $request->phone,
+                            'status' => 1
+                          ]);
+        return redirect('/student-list');
     }
 
 
