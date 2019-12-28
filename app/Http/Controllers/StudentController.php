@@ -4,8 +4,21 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Students;
+use Illuminate\Support\Facades\Validator;
+
 class StudentController extends Controller
 {
+    public function validator($student)
+    {
+        return Validator::make($student, [
+            'name' => 'required|string|max:255',
+            'email' => 'required|string|max:255',
+            'phone' => 'required|string|max:255'
+        ]);
+    }
+
+
+
     /**
      * Display a listing of the resource.
      *
@@ -17,6 +30,8 @@ class StudentController extends Controller
         return view('student-list')->with('Students',$studentList);
     }
 
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -27,6 +42,8 @@ class StudentController extends Controller
         return view('student-form');
     }
 
+
+
     /**
      * Store a newly created resource in storage.
      *
@@ -35,8 +52,7 @@ class StudentController extends Controller
      */
     public function store(Request $request)
     {
-        // dump($request);
-        // die();
+        $this->validator($request->all())->validate();
         Students::create([
             'name'=>$request->name,
             'email'=>$request->email,
@@ -46,6 +62,8 @@ class StudentController extends Controller
         ]);
         return redirect('/student-list');
     }
+
+
 
     /**
      * Display the specified resource.
@@ -58,6 +76,8 @@ class StudentController extends Controller
         
     }
 
+    
+    
     /**
      * Show the form for editing the specified resource.
      *
@@ -69,6 +89,8 @@ class StudentController extends Controller
         //
     }
 
+    
+    
     /**
      * Update the specified resource in storage.
      *
@@ -81,6 +103,8 @@ class StudentController extends Controller
         //
     }
 
+
+
     /**
      * Remove the specified resource from storage.
      *
@@ -89,6 +113,10 @@ class StudentController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $student = Students::find($id);
+        $student->status=0;
+        $student->save();
+
+        return redirect('/student-list');
     }
 }

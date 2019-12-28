@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Laravel Class (-_-)
                 </div>
 
                 <div class="links">
@@ -94,21 +94,14 @@
                     <a href="https://vapor.laravel.com">Vapor</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
                     <a href="/random">Random Number generator</a>
-                    <ul>
-
-                   <li> <a href="/student-form">Student Form</a></li>
-                   <li> <a href="/student-list">Student-List</a></li>
-                   <li> <a href="/faculty-form">Faculty form</a></li>
-                   <li> <a href="/faculty-list">Faculty List</a></li>
-                   <li> <a href="/department-form">Department Form</a></li>
-                   <li> <a href="/department-list">Department-List</a></li>
+                    <a href="/about">About</a>
+                   <br><br><br>
+                        <a href="/student-list">Student-List</a>
+                        <a href="/faculty-list">Faculty List</a>
+                        <a href="/department-list">Department-List</a>
+                    
                    
                    
-                   
-                   
-                   </ul>
-                   
-                   <a href="/about">About</a>
                 </div>
             </div>
         </div>

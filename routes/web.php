@@ -35,6 +35,7 @@ route::post('/incDecNumber/{num}','IncDecController@myNumberAdjust');
 route::get('/student-form/create','StudentController@create');
 route::post('/student-form/create','StudentController@store');
 route::get('/student-list','StudentController@index');
+route::get('/student/remove/{id}','StudentController@destroy');
 
 route::get('/department-form/create','DepartmentController@create');
 route::post('/department-form/create','DepartmentController@store');
