@@ -46,3 +46,7 @@ route::get('/department-list','DepartmentController@index');
 route::get('/faculty-form/create','FacultyController@create');
 route::post('/faculty-form/create','FacultyController@store');
 route::get('/faculty-list','FacultyController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

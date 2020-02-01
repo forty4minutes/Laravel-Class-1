@@ -20,6 +20,9 @@ class CreateStudentsTable extends Migration
             $table->string('phone');
             $table->boolean('status');
             $table->timestamps();
+            $table->unsignedBigInteger('faculty_id');
+
+            $table->foreign('faculty_id')->references('id')->on('faculties')->onDelete('cascade');
         });
     }
 
